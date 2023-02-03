@@ -94,7 +94,7 @@ ul, li {
 }
 
 header, nav, section, article, aside, footer, hgroup {
-  display: flow-root;
+  display: block;
 }
 
 * {
@@ -205,7 +205,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   color: #000000;
-  opacity: 0.15;
+  /* opacity: 0.15; */
   text-align: center;
 }
 
@@ -252,19 +252,19 @@ body {
 
 .main-red-button-hover a {
   display: inline-block;
-  background-color: #c0c0c0c7;
+  background-color: #4d85f687;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
   text-transform: capitalize;
-  padding: 12px 25px;
+  padding: 5px 10px;
   border-radius: 23px;
   letter-spacing: 0.25px;
   transition: all .3s;
 }
 
 .main-red-button-hover a:hover {
-  background-color: #03a4ed;
+  background-color: #0554f2d9;
 }
 
 .main-white-button a {
@@ -367,7 +367,7 @@ header
   padding-right: 20px;
 }
 
-.header-area .main-nav .nav li:last-child {
+.header-area .main-nav .nav i:last-child {
   padding-right: 0px;
   padding-left: 40px;
 }
@@ -375,9 +375,10 @@ header
 .header-area .main-nav .nav li:last-child a ,
 .background-header .main-nav .nav li:last-child a {
   color: #fff !important;
-  padding: 0px 100px 20px;
+  padding: 0px 10px;
   font-weight: 400;
 }
+
 
 .header-area .main-nav .nav li:last-child a:hover,
 .header-area .main-nav .nav li:last-child a.active {
@@ -386,13 +387,13 @@ header
 
 .header-area .main-nav .nav li:last-child .main-red-button-hover a:hover,
 .background-header .main-nav .nav li:last-child .main-red-button-hover a:hover {
-  background-color: #747474c7 !important;
+  background-color: #0554f2 !important;
 }
 
 .header-area .main-nav .nav li a {
   display: block;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 18px;
   color: #2a2a2a;
   text-transform: capitalize;
   -webkit-transition: all 0.3s ease 0s;
@@ -406,7 +407,12 @@ header
 }
 
 .header-area .main-nav .nav li a {
+  color: #000000;
+}
+
+.header-area .main-nav .nav li div a {
   color: #ffffff;
+  display: inline;
 }
 
 .header-area .main-nav .nav li:hover a,
@@ -416,8 +422,8 @@ header
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #000000!important;
-  opacity: 1;
+  color: #ffffff!important;
+  padding: 0px 10px;
 }
 
 .header-area .main-nav .nav li.submenu {
@@ -611,6 +617,7 @@ header
 
 .header-area.header-sticky {
   min-height: 80px;
+  z-index: 100;
 }
 
 .header-area .nav {
@@ -907,7 +914,7 @@ Banner Style
   font-size: 50px;
   font-weight: 700;
   color: #000000;
-  line-height: 72px;
+  line-height: 72px; 
 }
 
 .main-banner .item h2 em {
@@ -1006,7 +1013,8 @@ Services Style
   position: relative;
   margin-top: 0px;
   padding-top: 120px;
-  background-color: rgb(255, 255, 255);
+  background-color: #f9fafb;
+  padding-bottom: 10%;
 }
 
 .our-services .section-heading {
@@ -1016,18 +1024,28 @@ Services Style
 
 .our-services .section-heading h2 {
   margin: 0px 60px;
-  margin-bottom: -10px;
+  margin-bottom: 10px;
   color: #0f4fe6;
 }
+.our-services .section-heading span {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+}
+
+
+
 
 .our-services .item {
   text-align: center;
   margin: 15px;
   border-radius: 20px;
-  background-color: #cfcfcf26;
+  background-color: #ffffff;
   padding: 30px;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.05);
-  height: 400px;
+  height: 450px;
 }
 .our-services .item h4 {
   font-size: 20px;
@@ -1037,14 +1055,13 @@ Services Style
   line-height: 30px;
 }
 .our-services .item .icon {
-  width: 45px;
-  height: 45px;
+  width: 150px;
   margin: 0 auto;
 }
 
 .our-services .item p {
-  margin-top: 35px;
-  padding-top: 30px;
+  margin-top: 10px;
+  padding-top: 10px;
   border-top: 1px solid #eee;
 }
 .our-services .items {
@@ -1120,9 +1137,7 @@ About
   background-color: #f9fafb;
 }
 
-.about-us .left-image {
-  /* margin-right: 30px; */
-}
+
 .about-kicsv-com {
   text-align: center;
 }
@@ -1130,7 +1145,7 @@ About
   text-align: center;
   color: #0f4fe6;
 }
-.about-us .section-heading span {
+.about-us .section-heading span { 
   margin: auto;
   display: block;
 }
@@ -1172,38 +1187,87 @@ Portfolio
 --------------------------------------------- 
 */
 
-.our-portfolio .portfolio-left-dec img {
-  width: 342px;
-  height: 311px;
-  left: 45px;
-  top: 120px;
-  position: absolute;
-  z-index: 1;
-}
-
 .our-portfolio {
-  padding-top: 120px;
-  margin-top: 0px;
+  /* margin-top:30%; */
+  /* z-index: 2; */
   position: relative;
 }
+.our-portfolio .section-heading span {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+}
+
+.our-portfolio .footer-item1 img {
+  width: 50%;
+  float: right;
+  margin-right: 30%;
+  border-radius: 3%;
+  border-radius: 3%;
+  margin-bottom: 10%;
+  /* 소개 글이 길어지면 여기 부분 +로 바꾸기! */
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 19%);
+}
+.our-portfolio .footer-item2 img {
+  width: 50%;
+  float: left;
+  margin-left: 30%;
+  border-radius: 3%;
+  border-radius: 3%;
+  margin-bottom: 10%;
+  /* 소개 글이 길어지면 여기 부분 +로 바꾸기! */
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 19%);
+}
+.our-portfolio .footer-item1 h4 {
+  font-weight: bolder;
+  position: relative;
+  padding-top: 5%;
+  color: #000000;
+  font-size: 20px;
+}
+.our-portfolio .footer-item1 p {
+  position: relative;
+  padding-top: 5%;
+}
+.our-portfolio .footer-item2 h4 {
+  text-align: right;
+  padding-right:30px;
+  font-weight: bolder;
+  position: relative;
+  padding-top: 5%;
+  color: #000000;
+  font-size: 20px;
+}
+.our-portfolio .footer-item2 p {
+  position: relative;
+  padding-top: 5%;
+  text-align: right;
+  padding-right:30px
+}
+
+
 
 .our-portfolio .section-heading {
   text-align: center;
   margin-bottom: 60px;
+  margin-top: 20%;
 }
 
 .our-portfolio .section-heading h2 {
   text-align: center;
   margin: 0px 60px 0px 60px;
-  margin-bottom: -5px;
+  margin-bottom: 10px;
   position: relative;
   z-index: 1;
+  color: #0554f2;
 }
 
-.our-portfolio {
+/* .our-portfolio {
   margin: 0px ;
   background-color: #e5e8eb80;
-}
+} */
 .our-portfolio .portfolio-text {
   text-align: center;
   padding: 20px;
@@ -1221,9 +1285,18 @@ Portfolio
   bottom: 30px;
 }
 
-.our-portfolio .item .thumb:hover img {
+/* .our-portfolio .item .thumb:hover img {
   opacity: 0.7;
+} */
+our-portfolio .item .thumb:hover img {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2a2a2a;
+  margin-bottom: 10px;
 }
+
+
+
 
 .our-portfolio .item .hover-effect {
   position: absolute;
@@ -1245,15 +1318,24 @@ Portfolio
   /* margin: auto;
   display: block; */
 }
-.our-portfolio .inner-content h4{
-  font-size: 20px;
-  font-weight: 700;
-  color: rgb(0, 0, 0);
-  margin-bottom: 15px;
-  /* margin: auto;
-  display: block; */
-}
 
+.our-portfolio .inner-content h4{
+  margin-bottom: 10px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: rgb(49, 130, 246);
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  opacity: 15;
+  transform: translate3d(0px, 50px, 0px);
+  animation: 1s ease-in-out 0.5s 1 normal forwards running animation-1x3fevv;
+}
 .our-portfolio .inner-content span {
   font-size: 20px;
   font-weight: 700;
@@ -1275,16 +1357,21 @@ Portfolio
   font-size: 15px;
   color: #fff;
 }
+.our-portfolio .thumb {
+ text-align: right;
+}
 
 .our-portfolio .thumb .one {
-    width: 40%;
-    height: auto;
-    position: relative;
-    top: 0px;
-    margin: auto;
-    display: block;
-    animation: 0.5s ease-in-out 0.5s 1 normal forwards running animation-1x3fevv
+  width: 60%;
+  height: auto;
+  opacity: 020;
+  display: inline-block;
+  transform: translate3d(0px, 50px, 0px);
+  animation: 1s ease-in-out 1s 1 normal forwards running animation-1x3fevv;
 }
+
+
+
 
 .our-portfolio .thumb .two {
   width: 40%;
@@ -1837,37 +1924,32 @@ contact
 }
 
 form#contact {
-  margin-left: -50px;
+  margin: 10px 10px;
   position: relative;
   z-index: 2;
-  /* background-image: url(../images/contact-form-bg.png); */
-  background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
-  padding: 10px 20px
-px
-;
+  /* box-shadow: 0px 0px 15px rgb(0 0 0 / 10%); */
+  padding: 10px 20px;
+  margin-bottom: 100px;
   border-radius: -1px;
 }
 
 form#contact input {
-  width: 100%;
-  height: 30px;
+  width: 70%;
+  height: 35px;
   border-radius: 0px;
+  border-bottom-color: #d0d0d1;
   background-color: transparent;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0.5;
   outline: none;
   font-size: 15px;
   font-weight: 300;
   color: #2a2a2a;
-  margin-left: 20px;
-  margin-top: 10px;
-  margin-right: 20px;
-  margin-bottom: 10px;
+  padding: 0px 10px;
 }
 
 form#contact input::placeholder {
@@ -1876,14 +1958,15 @@ form#contact input::placeholder {
 
 form#contact button {
   display: inline-block;
-  background-color: hwb(0 77% 23%);
+  background-color: hwb(220deg 2% 5% / 63%);
   font-size: 15px;
   font-weight: 400;
   color: #fff;
   text-transform: capitalize;
-  padding: 12px 25px;
+  padding: 3px 15px;
   border-radius: 23px;
   letter-spacing: 0.25px;
+  margin-top: 10px;
   border: none;
   outline: none;
   transition: all .3s;
@@ -1909,7 +1992,7 @@ footer {
   margin-top: 0px;
   z-index: 2;
   position: relative;
-  background-color: #e5e8eb;
+  background-color: #f2f4f6;
   padding-top: 100px;
 }
 
@@ -1956,9 +2039,12 @@ footer .about ul li a:hover {
 }
 
 footer .footer-item ul li {
-  display: block;
-  margin-bottom: 12px;
+  display: inline-block;
+  margin-top: 12px;
+  margin-right: 25px;
+  /* float: left; */
 }
+
 
 footer .footer-item ul li:last-child {
   margin-bottom: 0px;
@@ -1974,38 +2060,32 @@ footer .footer-item ul li a:hover {
   color: #ff695f;
 }
 
-footer .footer-item p {
-  font-size: 15px;
-  color: #afafaf;
+footer .first-section {
   margin-top: -5px;
+  
+  
 }
 
-/* footer .footer-items form {
-  background-color: #c9c9c9;
+footer .footer-item form {
+  background-color: #03a4ed;
   height: 46px;
   border-radius: 23px;
   position: relative;
-  margin-top: 1px;
-}     */
-
-footer .footer-item form {
-  background-color: #fbfbfb;
-  border-radius: 10px;
-  position: relative;
-  margin-top: 1px;
+  margin-top: 15px;
 }
 
 footer .footer-item form input {
-  line-height: 37px;
+  line-height: 46px;
   background-color: transparent;
   border: none;
   font-size: 14px;
   padding: 0px 20px;
   outline: none;
+  text-align: center;
 }
 
 footer .footer-item form input::placeholder {
-  color: rgb(0, 0, 0);
+  color: #fff;
 }
 
 footer .footer-item form button {
@@ -2017,6 +2097,7 @@ footer .footer-item form button {
   border: none;
   outline: none;
 }
+
 
 footer .copyright p {
   text-align: center;
