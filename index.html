@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +11,7 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet prefetch" href="https://gist.githubusercontent.com/mfd/614e2e80a22b878bde63cb471cbe677e/raw/eef2aabfd0d588d43285431186a0cf70305ceb80/sanfrancisco-font.css">
     <title>KICSV222</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/images/kicsv_favicon.png" />
     <!-- Bootstrap core CSS -->
@@ -33,7 +33,10 @@ https://templatemo.com/tm-565-onix-digital
   </head>
 
 <body>
-
+  <div id="kr" style="display: none;">대한민국 ip로 접속 하셨습니다.</div>
+  <div id="us" style="display: none;">미국 ip로 접속 하셨습니다.</div>
+  <div id="cn" style="display: none;">중국 ip로 접속 하셨습니다.</div>
+  <div id="jp" style="display: none;">일본 ip로 접속 하셨습니다.</div>
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
@@ -75,8 +78,9 @@ https://templatemo.com/tm-565-onix-digital
               <li claas="scroll-to-section"><a href="portfolio">프로그램</a></li>
               <li><a href="https://www.facebook.com/kicsv/"><i class="fa fa-facebook"></i></a></li>
               <li><a href="https://www.linkedin.com/in/kicsv/"><i class="fa fa-linkedin"></i></a></li>
-              <li></li>
-              <!-- <li class="scroll-to-section"><div class="main-red-button-hover"><a href="#contact">Contact Us Now</a></div></li>  -->
+              <li class="scroll-to-section"><div class="main-red-button-hover"><a href="#">KOR</a></div></li>
+              <li class="scroll-to-section"><div class="main-red-button-hover"><a href="#">ENG</a></div></li>
+              <br>
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span> 
@@ -85,13 +89,13 @@ https://templatemo.com/tm-565-onix-digital
           </nav>
         </div>
       </div>
-    </div>
+    </div>  
   </header>
 
 <!-- ***** Header Area End ***** -->
 
   <!-- landing page slide -->
-  <div class="main-banner" id="top">
+  <div class="main-banner" id="top"> 
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -109,7 +113,7 @@ https://templatemo.com/tm-565-onix-digital
                   <!-- <p>This is a professional looking HTML Bootstrap 5 website template brought to you by TemplateMo website.</p> -->
                   <div class="down-buttons">
                     <div class="main-blue-button-hover">
-                      <a href="#contact">Now Program</a>
+                      <a href="#">Apply EMF</a>
                     </div>
                     <div class="call-button">
                       <!-- <a href="#"><i class="fa fa-phone"></i> (408)432-5085</a> -->
@@ -127,7 +131,7 @@ https://templatemo.com/tm-565-onix-digital
                   <!-- <p>You are NOT allowed to redistribute this template ZIP file on any Free CSS collection websites. Contact us for more info. Thank you.</p> -->
                   <div class="down-buttons">
                     <div class="main-blue-button-hover">
-                      <a href="#services">Now Program</a>
+                      <a href="#">Apply GMF</a>
                     </div>
                     <div class="call-button">
                       <!-- <a href="#"><i class="fa fa-phone"></i> (408)432-5085</a> -->
@@ -145,7 +149,7 @@ https://templatemo.com/tm-565-onix-digital
                   <!-- <p>Please <a rel="nofollow" href="https://www.paypal.me/templatemo" target="_blank">support us</a> a little via PayPal if this digital marketing HTML template is useful for you. Thank you.</p> -->
                   <div class="down-buttons">
                     <div class="main-blue-button-hover">
-                      <a href="#contact">Now Program</a>
+                      <a href="#">Apply PMF</a>
                     </div>
                     <div class="call-button">
                       <!-- <a href="#"><i class="fa fa-phone"></i> (408)432-5085</a> -->
@@ -160,80 +164,106 @@ https://templatemo.com/tm-565-onix-digital
     </div>
   </div>
 
+
+
+
+
+
+<!-- portfolio=our program -->
+<!-- portfolio=our program -->
 <!-- portfolio=our program -->
   <div id="portfolio" class="our-portfolio section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 offset-lg-3">
+        <div class="col-lg-12 ">
           <div class="section-heading">
-            <h2>프로그램 소개</h2>
-            <span>연간 n개의 프로그램을 통해~</span>
+            <h2>KICSV의 프로그램</h2>
+              <span>연간 n개의 프로그램을 통해~</span>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="owl-carousel owl-portfolio">
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-01.jpg" alt="">
-                <p class="portfolio-text">카본 멤버십 소개~~</p>
-                <div class="hover-effect">
-                  <div class="inner-content">
-                    <a rel="sponsored" href="#" target="_parent"><h4>카본 멤버십</h4></a>
-                    <span>카본 멤버십 소개~</span>
+        <div id="portfolio" class="our-portfolio section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="portfolio footer-item1">
+                  <div class="logo">
+                    <a href="#"><img src="assets/images/portfolio-01.jpg"></a>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-02.jpg" alt="">
-                <p class="portfolio-text">GMF 프로그램 소개~~</p>
-                <div class="hover-effect">
-                  <div class="inner-content">
-                    <a href="#"><h4>GMF 프로그램</h4></a>
-                    <span>GMF 영어 이름</span>
-                  </div>
+              <div class="col-lg-6">
+                <div class="portfolio footer-item1">
+                  <h4>카본 멤버십</h4>
+                    <p>소개ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</p>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-03.jpg" alt="">
-                <p class="portfolio-text">EMF 프로그램 소개~</p>
-                <div class="hover-effect">
-                  <div class="inner-content">
-                    <a rel="sponsored" href="#" target="_parent"><h4>EMF 프로그램</h4></a>
-                    <span>EMF 영어 이름</span>
-                  </div>
+          </div>
+        </div>
+        <div id="portfolio" class="our-portfolio section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="portfolio footer-item2">
+                  <h4>KIC SV 카본 멤버십 프로그램 <br>(KIC SV Carbon Membership Program )</h4>
+                    <p>글로벌 선도 기업으로 성장할 잠재력을 보유한 국내 우수 강소 기업을 대상으로 미국 사업 진출, 미국 현지 사업 역량 강화 및 미국 현지 네트워크 구축을 지원하는 멤버십 프로그램
+                    </p>
                 </div>
               </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-04.jpg" alt="">
-                <p class="portfolio-text">PMF 프로그램 소개~~</p>
-                <div class="hover-effect">
-                  <div class="inner-content">
-                    <a href="#"><h4>PMF 프로그램</h4></a>
-                    <span>PMF 영어 이름</span>
+              <div class="col-lg-6">
+                <div class="portfolio footer-item2">
+                  <div class="logo">
+                    <a href="#"><img src="assets/images/portfolio-02.jpg"></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div id="portfolio" class="our-portfolio section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="portfolio footer-item1">
+                  <div class="logo">
+                    <a href="#"><img src="assets/images/portfolio-03.jpg"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="portfolio footer-item1">
+                  <h4>EMF프로그램 <br>(실리콘밸리형 기업가 프로그램)</h4>
+                    <p>회사의 단계와 상관없이, 미국에서 법인을 설립/운영하고 투자 및 성장을 위한 실리콘밸리형 선진 기업 경영의 기본틀과 전략 그리고 인사이트를 분야별 최고 전문들로 구성하여 만든 프로그램.
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="portfolio" class="our-portfolio section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="portfolio footer-item2">
+                  <h4>PMF 프로그램 <br>(미국시장 적합성 프로그램)
+                  </h4>
+                    <p>미국 진출 스타트업들의 가장 중요한 활동인 시장 적합성을 지원하는 프로그램 입니다. 디지털 헬쓰 버티컬과 AI 버티컬 두가지 분야 프로그램을 운영하며, 자사의 제품과 서비스의 잠재 고객를 찾을수 있도록 시장 리서치, 제품의 현지화등을 위하여  다양한 형태의 방법과 툴들, 사례와 실질적인 네트워킹을을 지원하는 프로그램 입니다. 
+                    </p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="portfolio footer-item2">
+                  <div class="logo">
+                    <a href="#"><img src="assets/images/portfolio-04.jpg"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div> 
-
-
-
-
-
+  </div>
 
 
 
@@ -243,8 +273,8 @@ https://templatemo.com/tm-565-onix-digital
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <div class="section-heading">
-            <h2>WELCOME<span> KICSV</span></h2>
-            <span>대표적 기업 소개 </span>
+            <h2>KICSV의 대표기업</h2>
+            <span>워딩~</span>
           </div>
         </div>
       </div>
@@ -256,64 +286,64 @@ https://templatemo.com/tm-565-onix-digital
                 <br>
                 name
               </h4>
-              <div class="icon"> <img class="img" src="https://placeimg.com/45/45/any" /></div>
-              <p>"글로벌 선도 기업으로 성장할 잠재력을 보유한 국내 우수 강소 기업을 대상으로 미국 사업 진출, 미국워크 구축을 지원하는 멤버십 프로그램"</p>
+              <div class="icon"> <img class="img" src="assets/images/kicsv_person1.jpg" /></div>
+              <p>"Quote 글자 수에 따라 박스 크기 조절 예정"</p>
             </div>
             <div class="item">
               <h4>BEARROBOTICS
                 <br>
                 name
               </h4>
-              <div class="icon"> <img class="img" src="https://placeimg.com/45/45/any" /></div>
-              <p>"글로벌 선도 기업으로 성장할 잠재력을 보유한 국내 우수 강소 기업을 대상으로 미국 사업 진출, 미국워크 구축을 지원하는 멤버십 프로그램"</p>
+              <div class="icon"> <img class="img" src="assets/images/kicsv_person1.jpg" /></div>
+              <p>"Quote 글자 수에 따라 박스 크기 조절 예정"</p>
             </div>
             <div class="item">
               <h4>ZCONVERTER
                 <br>
                 name
               </h4>
-              <div class="icon"> <img class="img" src="https://placeimg.com/45/45/any" /></div>
-              <p>"글로벌 선도 기업으로 성장할 잠재력을 보유한 국내 우수 강소 기업을 대상으로 미국 사업 진출, 미국워크 구축을 지원하는 멤버십 프로그램"</p>
+              <div class="icon"> <img class="img" src="assets/images/kicsv_person1.jpg" /></div>
+              <p>"Quote 글자 수에 따라 박스 크기 조절 예정"</p>
             </div>
             <div class="item">
               <h4>STRAIO
                 <br>
                 name
               </h4>
-              <div class="icon"> <img class="img" src="https://placeimg.com/45/45/any" /></div>
-              <p>"글로벌 선도 기업으로 성장할 잠재력을 보유한 국내 우수 강소 기업을 대상으로 미국 사업 진출, 미국워크 구축을 지원하는 멤버십 프로그램"</p>
+              <div class="icon"> <img class="img" src="assets/images/kicsv_person1.jpg" /></div>
+              <p>"Quote 글자 수에 따라 박스 크기 조절 예정"</p>
             </div>
             <div class="item">
               <h4>SWIT
                 <br>
                 name
               </h4>
-              <div class="icon"> <img class="img" src="https://placeimg.com/45/45/any" /></div>
-              <p>"글로벌 선도 기업으로 성장할 잠재력을 보유한 국내 우수 강소 기업을 대상으로 미국 사업 진출, 미국워크 구축을 지원하는 멤버십 프로그램"</p>
+              <div class="icon"> <img class="img" src="assets/images/kicsv_person1.jpg" /></div>
+              <p>"Quote 글자 수에 따라 박스 크기 조절 예정"</p>
             </div>
             <div class="item">
               <h4>BEARROBOTICS
                 <br>
                 name
               </h4>
-              <div class="icon"> <img class="img" src="https://placeimg.com/45/45/any" /></div>
-              <p>"글로벌 선도 기업으로 성장할 잠재력을 보유한 국내 우수 강소 기업을 대상으로 미국 사업 진출, 미국워크 구축을 지원하는 멤버십 프로그램"</p>
+              <div class="icon"> <img class="img" src="assets/images/kicsv_person1.jpg" /></div>
+              <p>"Quote 글자 수에 따라 박스 크기 조절 예정"</p>
             </div>
             <div class="item">
               <h4>ZCONVERTER
                 <br>
                 name
               </h4>
-              <div class="icon"> <img class="img" src="https://placeimg.com/45/45/any" /></div>
-              <p>"글로벌 선도 기업으로 성장할 잠재력을 보유한 국내 우수 강소 기업을 대상으로 미국 사업 진출, 미국워크 구축을 지원하는 멤버십 프로그램"</p>
+              <div class="icon"> <img class="img" src="assets/images/kicsv_person1.jpg" /></div>
+              <p>"Quote 글자 수에 따라 박스 크기 조절 예정"</p>
             </div>
             <div class="item">
               <h4>STRAIO
                 <br>
                 name
               </h4>
-              <div class="icon"> <img class="img" src="https://placeimg.com/45/45/any" /></div>
-              <p>"글로벌 선도 기업으로 성장할 잠재력을 보유한 국내 우수 강소 기업을 대상으로 미국 사업 진출, 미국워크 구축을 지원하는 멤버십 프로그램"</p>
+              <div class="icon"> <img class="img" src="assets/images/kicsv_person1.jpg" /></div>
+              <p>"Quote 글자 수에 따라 박스 크기 조절 예정"</p>
             </div>
           </div>
         </div>
@@ -323,27 +353,28 @@ https://templatemo.com/tm-565-onix-digital
 
   <div class="footer-dec">
   </div>
-
   <footer>
     <div class="container">
       <div class="row">
         <!-- footer 첫번째 섹션 -->
-        <div class="col-lg-3">
-          <div class="about footer-item">
+        <div class="col-lg-4">
+          <div class="footer footer-item">
             <div class="logo">
-              <a href="#"><img src="assets/images/kicsv_logo.png" alt="KICSV LOGO"></a>
-              <ul>
-                <li><a href="https://www.facebook.com/kicsv/"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/kicsv/"><i class="fa fa-linkedin"></i></a></li>
-              </ul>
+              <div class="first-section">
+                <a href="#"><img src="assets/images/kicsv_logo.png" alt="KICSV LOGO"></a>
+                <ul>
+                  <li><a href="https://www.facebook.com/kicsv/"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/kicsv/"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
             </div>
           </div>
         </div>
 
 
         <!-- footer 두번째 섹션 - 문의사항 -->
-        <div class="col-lg-3">
-          <div class="services footer-item">
+        <div class="col-lg-4">
+          <div class="contents footer-item">
             <P>
               info © kicsv.org
               <br>
@@ -355,37 +386,51 @@ https://templatemo.com/tm-565-onix-digital
               </P>
           </div>
         </div>
-
-        <!-- footer 세번째 섹션 - 이메일 -->
-        <div class="col-lg-6">
-          <div class="subscribe-newsletters footer-item">
-            <h4>문의사항을 입력해주세요</h4>
-            <!-- <p>빠른 시간 내에 답해드리겠습니다.</p> -->
-            <form action="#" method="get">
-              <div class="col-lg-5">
-                <fieldset>
-                  <input type="text" name="email" id="email" class="input" pattern="[^ @]*@[^ @]*" placeholder="email@gmail.com" required="">
-                </fieldset>
-              </div>
-              <div class="col-lg-5" >
-                <fieldset>
-                  <input type="text" name="text" id="ask" class="input" placeholder="문의사항을 입력해주세요" required="">
-                </fieldset>
-              </div>
-                <button type="submit" id="form-submit" class="main-button "><i class="fa fa-paper-plane-o"></i></button>
-            </form>
-            
+        <!-- footer 세번째 섹션 -->
+        <div class="col-lg-4">
+          <div class="contents footer-item">
+            <P>
+              kicsv는
+              <br>
+              블라블라
+              <br>
+              블라블라
+              <br>
+              블라블라
+              </P>
           </div>
         </div>
-        <p>
-          <br>
-          <br>
-          <br>
-        </p>
+
+        <!-- footer 세번째 섹션 - 이메일 -->
+        <div class="col-lg-12">
+          <form id="contact" action="" method="get">
+            <div class="row">
+              <div class="col-lg-12-1">
+                <fieldset>
+                  <input type="name" name="name" id="name" placeholder="이름" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12-1">
+                <fieldset>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="이메일" required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12-1">
+                <fieldset>
+                  <input type="text" name="ask" id="ask" placeholder="문의사항" required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12-1">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="main-button">Submit Request</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </footer>
-
 
   <!-- Scripts -->
   <script src="vendor/jquery/jquery.min.js"></script>
