@@ -3,7 +3,7 @@
  * https://jquery.com/
  *
  * Includes Sizzle.js
- * https://sizzlejs.com/
+ * https://sizzlejs.com/ 
  *
  * Copyright JS Foundation and other contributors
  * Released under the MIT license
@@ -11,6 +11,63 @@
  *
  * Date: 2018-01-20T17:24Z
  */
+
+
+var ip = "";
+var hostname = "";
+var city = "";
+var region = "";
+var country = "";
+var loc = "";
+var org = "";
+
+
+$.ajax({
+    url: "http://ipinfo.io",
+    xhrFields: {
+        withCredentials: true,
+		ip: data.ip, // 접속자 ip
+		hostname: data.hostname, // 접속자 hostname
+		city: data.city, // 접속자 도시
+		region: data.region, // 접속자 지역
+		country: data.country, // 접속자 국가
+		loc: data.loc, // 접속 위도, 경도
+		org: data.org // ISP (인터넷 서비스 제공사업자)
+		}
+
+}).done(function(data) { console.log(data); });
+
+// this.Response.AddHeader("Access-Control-Allow-Origin", this.Request.Headers["Origin"]);
+
+// $.getJSON("http://ipinfo.io", function(data) {
+// 	ip = data.ip // 접속자 ip
+// 	hostname = data.hostname // 접속자 hostname
+// 	city = data.city // 접속자 도시
+// 	region = data.region // 접속자 지역
+// 	country = data.country // 접속자 국가
+// 	loc = data.loc // 접속 위도, 경도
+// 	org = data.org // ISP (인터넷 서비스 제공사업자)
+
+	if(country == "KR"){
+		this.addEventListener("touchstart", handle, { passive: true });
+		console.log(data);
+		$("#kr").show();
+	}else if(country == "US"){
+		this.addEventListener("touchstart", handle, { passive: true });
+		console.log(data);
+		$("#us").show();
+	}else if(country == "CN"){
+		this.addEventListener("touchstart", handle, { passive: true });
+		console.log(data);
+		$("#cn").show();
+	}else if(country == "JP"){
+		this.addEventListener("touchstart", handle, { passive: true });
+		console.log(data);
+		$("#jp").show();
+	};
+
+
+
 ( function( global, factory ) {
 
 	"use strict";
